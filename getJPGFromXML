@@ -1,0 +1,3 @@
+cat 0,,GF72808-16810,00.xml | grep grande | awk '{print $4}' | sed 's/supergaleria="//g' | sed 's/>//g' 
+|awk '{print "\"http://globoesporte.globo.com"$1}' | awk '{ system("wget " $1)}'
+
